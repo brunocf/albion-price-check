@@ -1,0 +1,17 @@
+{
+  "name": "albion-price-check",
+  "productName": "albion-price-check",
+  "version": "2.0.3",
+  "description": "Check prices at albion markets",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Bruno Felthes",
+    "email": "bruno.croys@gmail.com"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

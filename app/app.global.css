@@ -1,0 +1,96 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: Arial, Helvetica, Helvetica Neue, serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+p {
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item-name {
+  background: #333;
+  color: white;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+.item-name-title {
+  margin-left: 14px;
+  max-width: calc(100% - 60px);
+}
+
+.item-city-box {
+  font-size: small;
+  padding: 1px 6px;
+  border-bottom: 1px solid #EEE;
+}
+
+.item-price {
+  float: right
+}
+
+.option-box {
+  font-size: small;
+  padding: 1px 6px;
+  border-bottom: 1px solid #EEE;
+}
+
+.worst-highlight {
+  background-color: #FCC;
+}
+
+.best-highlight {
+  background-color: #CFC;
+}
+
+.item-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.item-icon:hover {
+  width: 108px;
+  height: 108px;
+}
+
+.tip-line,
+.tip-line div,
+.tip-line div div {
+  margin-top: 12px;
+}
+
+.tip-line {
+  margin-left: 10px;
+  margin-right: 10px;
+}
