@@ -1,0 +1,8 @@
+version: 2.0.3
+files:
+  - url: AlbionPriceCheck-Setup-2.0.3.exe
+    sha512: 5HLtDsVgflmLb0eV0fqVCdLhczSMZBlqLQ3cpx0b6SzKdmntd9GcAkZkFkDzY/l11pVH1Y52DmH3US0efdmu+w==
+    size: 46023951
+path: AlbionPriceCheck-Setup-2.0.3.exe
+sha512: 5HLtDsVgflmLb0eV0fqVCdLhczSMZBlqLQ3cpx0b6SzKdmntd9GcAkZkFkDzY/l11pVH1Y52DmH3US0efdmu+w==
+releaseDate: '2020-06-07T18:42:20.808Z'
