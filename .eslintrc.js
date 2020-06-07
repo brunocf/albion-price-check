@@ -2,8 +2,7 @@ module.exports = {
   extends: 'erb/typescript',
   rules: {
     // A temporary hack related to IDE not resolving correct package.json
-    'import/no-extraneous-dependencies': 'off',
-    "react/prop-types": "0"
+    'import/no-extraneous-dependencies': 'off'
   },
   settings: {
     'import/resolver': {
