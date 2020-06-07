@@ -15,7 +15,7 @@ With this tool, you can easily check for albion itens price anywhere you are in 
 
 - Interact with the game
 - Read the game screen
-- Read the game packages
+- Read the game network packages
 
 ## License
 
