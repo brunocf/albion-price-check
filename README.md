@@ -13,7 +13,7 @@ With this tool, you can easily check for albion itens price anywhere you are in 
 
 ![](resources/albion2.PNG)
 
-## This tool does NOT:
+## This tool does NOT do:
 
 - Interact with the game
 - Read the game screen
