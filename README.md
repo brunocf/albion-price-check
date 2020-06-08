@@ -1,5 +1,5 @@
 # Albion Price Check
-With this tool, you can easily check for albion itens price anywhere you are in the game.
+With this tool, you can easily check for albion itens price while you are playing.
 
 [Click here to download](https://github.com/brunocf/albion-price-check/releases/download/2.0.1/AlbionPriceCheck.2.0.3.msi)
 
