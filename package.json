@@ -1,7 +1,7 @@
 {
   "name": "albion-price-check",
   "productName": "albion-price-check",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Check prices at albion markets",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",

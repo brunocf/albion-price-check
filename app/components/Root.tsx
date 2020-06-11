@@ -14,7 +14,7 @@ const Root = ({ store, history }) => {
         </Switch>
       </ConnectedRouter>
     </Provider>
-  )
+  );
 };
 
 export default hot(Root);

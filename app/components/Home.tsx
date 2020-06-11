@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import { ipcRenderer } from 'electron';
-import { addTag, removeTag } from '../redux/actions/items';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 import Options from './Options';
 import { cities } from '../redux/actions/options';
 import Tips from './Tips';
-
+import { addTag, removeTag } from '../redux/actions/items';
 
 const numberFormat = new Intl.NumberFormat('en-US');
 
@@ -25,13 +24,13 @@ function Home(props:any) {
     if (!eventRegistered) {
       ipcRenderer.on('_clipboard_event_', (_event, value) => {
         let start = -1;
-        for(let i=0; i<value.length; i++) {
+        for (let i = 0; i < value.length; i++) {
           const code = value.charCodeAt(i);
           if (code === 65535) {
             if (start === -1) {
               start = i;
             } else {
-              const tag =  value.substring(start+1, i);
+              const tag = value.substring(start + 1, i);
               dispatch(addTag(tag));
               start = -1;
             }
@@ -48,10 +47,11 @@ function Home(props:any) {
 
   const nameTitle = (item:any) => {
     const itemData = data.find((i:any) => i.tag === item.tag);
+    console.log(itemData);
     const itemName = _.get(itemData, 'data.localizedNames.EN-US', item.tag);
     const itemTier = _.get(itemData, 'data.tier');
-    const itemEnchantmentLevel = _.get(itemData, 'data.enchantmentLevel', 0);
-    const tierText = !itemTier ? '' : `T${ itemTier }${ itemEnchantmentLevel > 0 ? `.${ itemEnchantmentLevel }` : '' }`;
+    const itemLevel = _.get(itemData, 'data.level', 0);
+    const tierText = !itemTier ? '' : `T${ itemTier }${ itemLevel > 0 ? `.${ itemLevel }` : '' }`;
     return <div className="item-name">
       <span style={{ float: 'right', cursor: 'pointer', zIndex: 10 }} onClick={
         () => dispatch(removeTag(item.tag))
